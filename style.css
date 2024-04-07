@@ -1,0 +1,48 @@
+.container {
+    width: 250px;
+    height: 450px;
+    border: 1px solid;
+    margin: 35px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.card {
+    transform-style: preserve-3d;
+    transform-origin: 100% 50%;
+    transition: transform 1s;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    line-height: 450px;
+    font-size: 35px;
+    text-align: center;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+
+.front {
+    backface-visibility: hidden;
+    background-color: red;
+    z-index: 1;
+}
+
+.back {
+    background-color: aqua;
+    /* transform: rotateY(180deg); */
+}
+
+
+/* Buttons */
+
+.btn-container {
+    margin: 35px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
